@@ -4,12 +4,7 @@ import { v4 as uuid } from 'uuid'
 import ColumnsWrapper from '@/components/ColumnsWrapper.vue'
 import Column from '@/components/Column.vue'
 import CategoryColumn from '@/components/CategoryColumn.vue'
-
-interface ColumnData {
-  id: string
-  category: string
-  width?: number
-}
+import { ColumnData } from '@/types/ColumnData'
 
 const columns = ref<ColumnData[]>([])
 
