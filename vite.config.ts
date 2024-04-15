@@ -11,13 +11,7 @@ export default defineConfig((configEnv) => ({
       "@svg": path.resolve(__dirname, "./svg"),
     }
   },
-  plugins: [vue({
-    template: {
-      compilerOptions: {
-        isCustomElement: (tag) => ['mdicon'].includes(tag),
-      }
-    }
-  }), svgLoader()],
+  plugins: [vue(), svgLoader()],
   test: {
     environment: 'happy-dom',
   }
