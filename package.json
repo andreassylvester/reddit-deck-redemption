@@ -6,17 +6,32 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest --dom"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "@mdi/js": "^7.4.47",
+    "axios": "^1.6.8",
+    "dompurify": "^3.1.0",
+    "mdi-vue": "^3.0.13",
+    "uuid": "^9.0.1",
+    "vue": "^3.4.21",
+    "vue-router": "4.3.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^20.12.7",
+    "@types/uuid": "^9.0.8",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/test-utils": "^2.4.5",
+    "happy-dom": "^14.7.1",
+    "path": "^0.12.7",
     "prettier": "^3.2.5",
+    "sass": "^1.75.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-linter": "^2.1.1",
+    "vite-svg-loader": "^5.1.0",
     "vitest": "^1.5.0",
     "vue-tsc": "^2.0.6"
   }
