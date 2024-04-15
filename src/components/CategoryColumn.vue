@@ -41,7 +41,7 @@ watch(() => [props.category, after.value], () => {
   loading.value = true
   getPosts(props.category.replace(" ", "-"), after.value).then((p: PostList) => {
     posts.value = p
-  }).catch((error) => {
+  }).catch(() => {
     // TODO: actually check what type of error, not just assume it's an non-existant subreddit
     subredditNotFound.value = true
     categoryField.value?.focus()
